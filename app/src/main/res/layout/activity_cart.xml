@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/cartBackToDisplay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_cartRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/cartBackToDisplay"
+        android:layout_above="@+id/down"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/floatingActionButton"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="$total amount"
+            android:textSize="20dp"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/check_out"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="chech out"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
