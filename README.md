@@ -4,8 +4,7 @@
 
 ## Sign up & Log in
 New user information will be save to Firebase. Old user's data will be verified through Firebase authentication services.
-<img src="https://github.com/amberYYX/Special_U/blob/master/screenShoot/login.png" width="200"/><br/>
-
+<div align=center><img width="450" src="https://github.com/amberYYX/Special_U/blob/master/screenShoot/login.png"/></div>
 
 ## Product display
 RecyclerView is used to display products.
